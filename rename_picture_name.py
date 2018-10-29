@@ -1,7 +1,7 @@
 import os
 # 输入新的文件名
 
-path = r"C:\Users\huili\Desktop\fruit_test"
+path = r"H:\1"
 filelist = os.listdir(path)
 count = 0
 for file in filelist:
@@ -12,7 +12,7 @@ for file in filelist:
         continue
     filename = os.path.splitext(file)[0]
     filetype = os.path.splitext(file)[1]
-    Newdir = os.path.join(path, str(count).zfill(5) + filetype)
+    Newdir = os.path.join(path, 'dongzao_' + str(count).zfill(5) + filetype)
     os.rename(Olddir, Newdir)
 
     count += 1

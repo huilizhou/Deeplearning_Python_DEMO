@@ -10,16 +10,17 @@ import os
 
 # In[5]:
 
+root_dir = r"C:\Users\huili\Desktop\tensorflow_alexnet_classify\trian_data"
 
 # 水平垂直翻转原图片，扩充数据集。
-for root, dirs, files in os.walk("images"):
+for root, dirs, files in os.walk(root_dir):
     #     print(root)
     #     print(dirs)
     #     print(files)
     if(files):
         for item in files:
             img = cv2.imread(os.path.join(root, item))
-            dst = cv2.resize(img, (100, 100))
+            dst = cv2.resize(img, (224, 224))
             cv2.imwrite(os.path.join(root, item), dst)
 
 #     for i in files:
@@ -33,12 +34,13 @@ for root, dirs, files in os.walk("images"):
 
 
 # 水平垂直翻转原图片，扩充数据集。
-for root, dirs, files in os.walk("images/unhealth/"):
-    #     print(root)
-    #     print(dirs)
-    #     print(files)
+for root, dirs, files in os.walk("train_data/0.dongzao/"):
+    # print(root)
+    # print(dirs)
+    # print(files)
     for i in files:
-        img = cv2.imread(os.path.join("images/unhealth", i))
+        img = cv2.imread(os.path.join("images/0.dongzao", i))
         newfilename = ''.join(i.split('.')[:-1])
         dst = cv2.flip(img, 1)
-        cv2.imwrite("images/new_unhealth/" + newfilename + '_flip1.bmp', dst)
+        cv2.imwrite("images/0.dongzao/" + newfilename + '_flip1.jpg', dst)
+        print('oK')
