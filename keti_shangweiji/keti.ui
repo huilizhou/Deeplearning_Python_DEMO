@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>993</width>
+    <height>738</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QPushButton" name="pushButton_opencamera">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>50</y>
+     <width>112</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>打开摄像头</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_capturepic">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>100</y>
+     <width>112</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>捕获图片</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_resize128">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>150</y>
+     <width>112</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>调整为128</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_recognzl">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>200</y>
+     <width>112</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>识别种类</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_setfile">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>260</y>
+     <width>112</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>设定目录</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_savepic">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>310</y>
+     <width>112</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>保存原图</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_save128">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>360</y>
+     <width>112</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>保存128图</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_readpic">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>410</y>
+     <width>112</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>读取原图</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_read128">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>460</y>
+     <width>112</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>读取128图</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_onesteprcogn">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>460</y>
+     <width>112</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>一键识别</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="textEdit_show">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>510</y>
+     <width>141</width>
+     <height>51</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_orgin">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>60</y>
+     <width>200</width>
+     <height>200</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_capture">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>300</y>
+     <width>200</width>
+     <height>200</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_128">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>60</y>
+     <width>200</width>
+     <height>200</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_opencom">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>520</y>
+     <width>112</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>打开串口</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_sendcmd">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>570</y>
+     <width>112</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>命令发送</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_weight">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>630</y>
+     <width>50</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>重量：</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>630</y>
+     <width>100</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>630</y>
+     <width>21</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>g</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox">
+   <property name="geometry">
+    <rect>
+     <x>768</x>
+     <y>523</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>COM1</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM2</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM3</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM4</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM5</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM6</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM7</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM8</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM9</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM10</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM11</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM12</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM13</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM14</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label_price">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>680</y>
+     <width>50</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>价格：</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>680</y>
+     <width>21</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>元</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_price">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>680</y>
+     <width>100</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton_opencamera</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>opencamera()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>631</x>
+     <y>64</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>578</x>
+     <y>65</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_resize128</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>resize128()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>631</x>
+     <y>164</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>577</x>
+     <y>159</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_setfile</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>setfile()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>630</x>
+     <y>278</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>574</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_onesteprcogn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>onesteprecogn()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>441</x>
+     <y>477</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>414</x>
+     <y>477</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_capturepic</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>capturepic()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>632</x>
+     <y>118</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>575</x>
+     <y>116</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_recognzl</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>recognzl()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>636</x>
+     <y>217</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>577</x>
+     <y>213</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_savepic</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>savepic()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>634</x>
+     <y>326</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>579</x>
+     <y>323</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_save128</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>save128()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>640</x>
+     <y>377</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>574</x>
+     <y>371</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_readpic</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>readpic()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>639</x>
+     <y>421</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>579</x>
+     <y>422</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_read128</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>read128()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>634</x>
+     <y>477</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>585</x>
+     <y>475</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_opencom</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>opencom()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>740</x>
+     <y>534</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>777</x>
+     <y>540</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_sendcmd</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>sendcomcmd()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>740</x>
+     <y>585</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>785</x>
+     <y>582</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <signal>clicked()</signal>
+  <slot>opencamera()</slot>
+  <slot>capturepic()</slot>
+  <slot>resize128()</slot>
+  <slot>recognzl()</slot>
+  <slot>setfile()</slot>
+  <slot>savepic()</slot>
+  <slot>save128()</slot>
+  <slot>read128()</slot>
+  <slot>readpic()</slot>
+  <slot>onesteprecogn()</slot>
+  <slot>opencom()</slot>
+  <slot>sendcomcmd()</slot>
+ </slots>
+</ui>
