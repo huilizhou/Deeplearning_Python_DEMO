@@ -37,7 +37,7 @@ def folder_read(base_path,m_label,fname):
     #fo = open("D:\\test\\shujuji\\data_batch_4.bin", "ab")
     #fo = open("D:\\test\\shujuji\\data_batch_5.bin", "ab") 
     ftest = open("D:\\test\\chenfruit_128\\test_batch.bin", "ab")
-    i=0;
+    i=0
     for file in os.listdir(base_path):
 
         file_path = os.path.join(base_path, file)

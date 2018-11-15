@@ -11,7 +11,7 @@ def bmpToJpg(file_path):
 
 
 def main():
-    file_path = "C:\\Users\\huili\\Desktop\\热图数据集\\unhealth"
+    file_path = "C:\\Users\\huili\\Desktop\\6月前不正常"
     bmpToJpg(file_path)
 
 

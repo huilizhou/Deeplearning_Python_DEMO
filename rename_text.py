@@ -1,9 +1,9 @@
 import os
 # 输入新的文件名
 
-path = r"D:\Operate_BIN\image\new1282"
+path = r"C:\Users\huili\Desktop\任务1：批量重命名（只命名1-200.txt）\任务1：批量重命名（只命名1-200.txt）"
 filelist = os.listdir(path)
-count = 0
+count = 201
 for file in filelist:
     print(file)
 for file in filelist:
@@ -12,7 +12,7 @@ for file in filelist:
         continue
     filename = os.path.splitext(file)[0]
     filetype = os.path.splitext(file)[1]
-    Newdir = os.path.join(path, 'huang_' + str(count).zfill(4) + filetype)
+    Newdir = os.path.join(path, str(count) + filetype)
     os.rename(Olddir, Newdir)
 
     count += 1
