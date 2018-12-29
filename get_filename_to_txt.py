@@ -1,6 +1,6 @@
 import os
 import os.path
-rootdir = r"C:\Users\huili\Desktop\VOCdevkit\VOC2018\Annotations"
+rootdir = r"C:\Users\huili\Desktop\dian_datas\annotations\xmls"
 
 file_object = open('file.txt', 'w')
 for parent, dirnames, filenames in os.walk(rootdir):

@@ -2,7 +2,7 @@ import os
 import os.path
 import xml.dom.minidom
 
-path = r"C:\Users\huili\Desktop\新建文件夹 (3)\2xml"
+path = r"C:\Users\huili\Desktop\dian_datas\annotations\xmls"
 files = os.listdir(path)
 s = []
 for xmlFile in files:
