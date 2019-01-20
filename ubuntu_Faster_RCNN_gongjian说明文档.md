@@ -6,14 +6,14 @@
 ### 输入的指令
 在research 目录下
 1. 添加环境变量
-export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim
+` export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim `
 
 2. 创建数据集
 `python object_detection/dataset_tools/create_gongjian_tf_record_ex2tron.py --data_dir=object_detection/gongjian_datas --output_dir=object_detection/gongjian_datas/output_datasets`
 
 3. 选择配置模型
 这边选择的是“faster_rcnn_resnet101”
-复制`object_detection\samples\configs`
+复制`object_detection/samples/configs`
 修改其中的配置
 （我已经修改好了，改名为`faster_rcnn_resnet101_gongjian.config`）：
 ```
@@ -34,7 +34,7 @@ eval_input_reader: label_map_path # 标签文件地址 132行
 
 6. 导出PB模型(可选)
 
-`python object_detection\export_inference_graph.py --input_type=image_tensor --pipeline_config_path=object_detection\samples\configs\faster_rcnn_resnet101_gongjian.config --trained_checkpoint_prefix=object_detection\gongjian_datas\tune_checkpoints\model.ckpt-xxxxx --output_directory=object_detection\gongjian_datas\saved_model`
+`python object_detection//export_inference_graph.py --input_type=image_tensor --pipeline_config_path=object_detection/samples/configs/faster_rcnn_resnet101_gongjian.config --trained_checkpoint_prefix=object_detection/gongjian_datas/tune_checkpoints/model.ckpt-50237 --output_directory=object_detection/gongjian_datas/saved_model`
 
 7. 调用生成的模型：
 
@@ -46,6 +46,6 @@ PATH_TO_LABELS # 标签文件地址 28行
 NUM_CLASSES # 分类数目 29行
 ```
 
-最后将测试的图片放在`object_detection\test_images\`下，运行如下指令即可：
+最后将测试的图片放在`object_detection/test_images/`下，运行如下指令即可：
 
-`python object_detection\object_detection_tutorial_ex2tron.py`
+`python object_detection/object_detection_tutorial_ex2tron.py`

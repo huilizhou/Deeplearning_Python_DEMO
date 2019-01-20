@@ -1,7 +1,7 @@
 import os
 # 输入新的文件名
 
-path = r"C:\Users\huili\Desktop\dian_datas\annotations\xmls"
+path = r"C:\Users\huili\Desktop\image"
 filelist = os.listdir(path)
 count = 0
 for file in filelist:

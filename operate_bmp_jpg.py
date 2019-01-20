@@ -4,14 +4,14 @@ from PIL import Image
 
 def bmpToJpg(file_path):
     for filename in os.listdir(file_path):
-        newfilename = filename[0:5] + '.jpg'
+        newfilename = filename[1:] + '.jpg'
         print(newfilename)
         im = Image.open(file_path + "\\" + filename)
         im.save(file_path + "\\" + newfilename)
 
 
 def main():
-    file_path = "C:\\Users\\huili\\Desktop\\6月前不正常"
+    file_path = "C:\\Users\\huili\\Desktop\image"
     bmpToJpg(file_path)
 
 
