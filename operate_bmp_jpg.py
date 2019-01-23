@@ -11,7 +11,7 @@ def bmpToJpg(file_path):
 
 
 def main():
-    file_path = "C:\\Users\\huili\\Desktop\image"
+    file_path = "C:\\Users\\huili\\Desktop\\gongjian_test_image"
     bmpToJpg(file_path)
 
 

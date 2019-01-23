@@ -1,6 +1,6 @@
 import cv2
 
 
-img = cv2.imread('1.jpg')
-dst = cv2.resize(img, (640, 480))
-cv2.imwrite('dst.jpg', dst)
+img = cv2.imread('00000.png')
+dst = cv2.resize(img, (960, 720))
+cv2.imwrite('000.png', dst)
