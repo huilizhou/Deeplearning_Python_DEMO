@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block body %}
+<table class="table">
+    <thead>
+        <tr>
+            <th>内容</th>
+            <th>取值</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>时间</td>
+            <td><input type="text" id="recodetime" value={{ the_recordtime }} readonly="true" /></td>
+        </tr>
+        <tr>
+            <td>光照</td>
+            <td><input type="text" id="light" value={{ the_light }} readonly="true" /></td>
+        </tr>
+        <tr>
+            <td>温度</td>
+            <td><input type="text" id="temperature" value={{ the_temperature }} readonly="true" /></td>
+        </tr>
+        <tr>
+            <td>湿度</td>
+            <td><input type="text" id="humidity" value={{ the_humidity }} readonly="true" /></td>
+        </tr>
+    </tbody>
+</table>
+{% endblock %}
