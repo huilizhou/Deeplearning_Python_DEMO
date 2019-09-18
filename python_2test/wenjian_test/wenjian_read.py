@@ -1,0 +1,6 @@
+fi = open('wenjian.txt', 'r', encoding='utf-8')
+# txt = fi.read()
+# txt = fi.readline()
+txt = fi.readlines()
+print(txt)
+fi.close()
