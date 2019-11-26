@@ -64,8 +64,8 @@ activation=linear
 [yolo]
 mask = 3,4,5
 anchors = 10,14,  23,27,  37,58,  81,82,  135,169,  344,319
-classes=6
-num=6       #修改类别
+classes=6   #修改类别
+num=6     
 jitter=.3
 ignore_thresh = .7
 truth_thresh = 1

@@ -1,8 +1,8 @@
 import os
 import os.path
-rootdir = r"C:\Users\huili\Desktop\banana_test\xml"
+rootdir = r"C:\Users\huili\Desktop\VOCdevkit\VOC2019\Annotations"
 
-file_object = open('file.txt', 'w')
+file_object = open('file1.txt', 'w')
 for parent, dirnames, filenames in os.walk(rootdir):
     for filename in filenames:
         # print(filename)
