@@ -1,7 +1,7 @@
 import os
 # 输入新的文件名
 
-path = "C:\\Users\\huili\\Desktop\\JPEGImages"
+path = "C:\\Users\\huili\\Desktop\\Capture"
 filelist = os.listdir(path)
 count = 0
 for file in filelist:
