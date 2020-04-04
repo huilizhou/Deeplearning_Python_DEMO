@@ -1,0 +1,26 @@
+<?xml version="1.0" ?><annotation>
+	<folder>orange</folder>
+	<filename>1829.jpg</filename>
+	<path>C:\Users\huili\Desktop\huili\orange\orange115.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>320</width>
+		<height>240</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>orange</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>138</xmin>
+			<ymin>26</ymin>
+			<xmax>236</xmax>
+			<ymax>124</ymax>
+		</bndbox>
+	</object>
+</annotation>

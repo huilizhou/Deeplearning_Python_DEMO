@@ -1,0 +1,26 @@
+<?xml version="1.0" ?><annotation>
+	<folder>apple</folder>
+	<filename>0025.jpg</filename>
+	<path>D:\VOC2019\JPEGImages\yekai\apple\apple121.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>320</width>
+		<height>240</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>apple</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>83</xmin>
+			<ymin>85</ymin>
+			<xmax>187</xmax>
+			<ymax>186</ymax>
+		</bndbox>
+	</object>
+</annotation>

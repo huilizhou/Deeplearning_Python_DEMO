@@ -1,0 +1,26 @@
+<?xml version="1.0" ?><annotation>
+	<folder>pear</folder>
+	<filename>2752.jpg</filename>
+	<path>D:\friut128\pear\pear397.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>320</width>
+		<height>240</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>pear</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>123</xmin>
+			<ymin>13</ymin>
+			<xmax>237</xmax>
+			<ymax>151</ymax>
+		</bndbox>
+	</object>
+</annotation>

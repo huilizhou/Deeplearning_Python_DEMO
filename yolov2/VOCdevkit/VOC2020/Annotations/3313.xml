@@ -1,0 +1,26 @@
+<?xml version="1.0" ?><annotation>
+	<folder>strawberry</folder>
+	<filename>3313.jpg</filename>
+	<path>D:\friut128\strawberry\strawberry360.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>320</width>
+		<height>240</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>strawberry</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>126</xmin>
+			<ymin>141</ymin>
+			<xmax>186</xmax>
+			<ymax>207</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,26 @@
+<?xml version="1.0" ?><annotation>
+	<folder>mangosteen</folder>
+	<filename>1551.jpg</filename>
+	<path>C:\Users\huili\Desktop\huili\mangosteen\mangosteen410.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>320</width>
+		<height>240</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>mangosteen</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>160</xmin>
+			<ymin>117</ymin>
+			<xmax>235</xmax>
+			<ymax>194</ymax>
+		</bndbox>
+	</object>
+</annotation>
